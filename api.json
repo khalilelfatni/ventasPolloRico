@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "name": "Kebab",
+        "imgUrl" : "url"
+    },
+    {
+        "id" : 2,
+        "name" : "Shawarma",
+        "imgUrl" : "url"
+    },
+    {
+        "id":3,
+        "name": "Durum",
+        "imgUrl" : "url"
+    },
+    {
+        "id":4,
+        "name": "Hamburgesa",
+        "imgUrl" : "url"
+    },
+    {
+        "id":5,
+        "name": "Falafel",
+        "imgUrl" : "url"
+    },
+    {
+        "id":6,
+        "name": "Perrito",
+        "imgUrl" : "url"
+    },
+    {
+        "id":7,
+        "name": "Tarrina",
+        "imgUrl" : "url"
+    },
+    {
+        "id":8,
+        "name": "Raciones",
+        "imgUrl" : "url"
+    },
+    {
+        "id":9,
+        "name": "Ensaladas ricas",
+        "imgUrl" : "url"
+    },
+    {
+        "id":10,
+        "name": "Refrescos",
+        "imgUrl" : "url"
+    },
+    {
+        "id":10,
+        "name": "Pizza turca",
+        "imgUrl" : "url"
+    }
+
+]

@@ -1,0 +1,266 @@
+[
+    {
+        "id":1,
+        "idProdcut":1,
+        "name" : "normal",
+        "price":2.50
+
+    },
+    {
+        "id":2,
+        "idProdcut":1,
+        "nama":"normal con queso",
+        "price":3.00
+    },
+    {
+        "id":3,
+        "idProdcut":1,
+        "nama":"completo",
+        "price":3.50
+    },
+    {
+        "id":4,
+        "idProdcut":1,
+        "nama":"mixto",
+        "price":3.50
+    },
+    {
+        "id":5,
+        "idProdcut":1,
+        "nama":"solo carne",
+        "price":4.00
+    },
+    {
+        "id":6,
+        "idProdcut":2,
+        "name" : "normal",
+        "price":3.00
+
+    },
+    {
+        "id":7,
+        "idProdcut":2,
+        "nama":"normal con queso",
+        "price":3.50
+    },
+    {
+        "id":8,
+        "idProdcut":2,
+        "nama":"completo",
+        "price":4.00
+    },
+    {
+        "id":9,
+        "idProdcut":2,
+        "nama":"mixto",
+        "price":4.00
+    },
+    {
+        "id":10,
+        "idProdcut":2,
+        "nama":"solo carne",
+        "price":4.00
+    },
+    {
+        "id":11,
+        "idProdcut":3,
+        "name" : "normal",
+        "price":3.50
+
+    },
+    {
+        "id":12,
+        "idProdcut":3,
+        "nama":"normal con queso",
+        "price":4.00
+    },
+    {
+        "id":13,
+        "idProdcut":3,
+        "nama":"completo",
+        "price":4.50
+    },
+    {
+        "id":14,
+        "idProdcut":3,
+        "nama":"mixto",
+        "price":4.50
+    },
+    {
+        "id":15,
+        "idProdcut":3,
+        "nama":"solo carne",
+        "price":4.50
+    },
+    {
+        "id":16,
+        "idProdcut":4,
+        "name" : "normal",
+        "price":3.00
+
+    },
+    {
+        "id":17,
+        "idProdcut":4,
+        "nama":"normal con queso",
+        "price":3.50
+    },
+    {
+        "id":18,
+        "idProdcut":4,
+        "nama":"completo",
+        "price":4.00
+    },
+    {
+        "id":19,
+        "idProdcut":4,
+        "nama":"doble de carne",
+        "price":4.50
+    },
+    {
+        "id":20,
+        "idProdcut":5,
+        "name" : "normal",
+        "price":2.50
+
+    },
+    {
+        "id":21,
+        "idProdcut":5,
+        "nama":"normal con queso",
+        "price":3.00
+    },
+    {
+        "id":22,
+        "idProdcut":5,
+        "nama":"completo",
+        "price":3.50
+    },
+    {
+        "id":23,
+        "idProdcut":6,
+        "name" : "normal",
+        "price":2.00
+
+    },
+    {
+        "id":24,
+        "idProdcut":6,
+        "nama":"normal con queso",
+        "price":2.50
+    },
+    {
+        "id":25,
+        "idProdcut":6,
+        "nama":"completo",
+        "price":3.00
+    },
+    {
+        "id":26,
+        "idProdcut":7,
+        "nama":"pequeña",
+        "price":3.00
+    },
+    {
+        "id":27,
+        "idProdcut":7,
+        "name" : "mediana",
+        "price":3.50
+
+    },
+    {
+        "id":28,
+        "idProdcut":7,
+        "nama":"grande",
+        "price":4.50
+    },
+    {
+        "id":29,
+        "idProdcut":7,
+        "nama":"gigante",
+        "price":6.00
+    },
+    {
+        "id":30,
+        "idProdcut":7,
+        "nama":"ingrediente extra",
+        "price":0.50
+    },
+    {
+        "id":31,
+        "idProdcut":8,
+        "name" : "1/2 racion alitas o nugget",
+        "price":3.50
+
+    },
+    {
+        "id":32,
+        "idProdcut":8,
+        "nama":"racion alitas o nugget",
+        "price":6.00
+    },
+    {
+        "id":33,
+        "idProdcut":8,
+        "nama":"1/2 patatas fritas",
+        "price":2.00
+    },
+    {
+        "id":34,
+        "idProdcut":8,
+        "nama":"racion patatas fritas",
+        "price":2.50
+    },
+    {
+        "id":35,
+        "idProdcut":9,
+        "nama":"mixta",
+        "price":3.00
+    },
+    {
+        "id":36,
+        "idProdcut":9,
+        "nama":"pollo rico",
+        "price":3.50
+    },
+    {
+        "id":37,
+        "idProdcut":10,
+        "nama":"lata",
+        "price":1.00
+    },
+    {
+        "id":38,
+        "idProdcut":10,
+        "nama":"agua pequeña",
+        "price":1.00
+    },
+    {
+        "id":39,
+        "idProdcut":10,
+        "nama":"agua grande",
+        "price":1.50
+    },
+    {
+        "id":40,
+        "idProdcut":10,
+        "nama":"botella 2 litros",
+        "price":2.50
+    },
+    {
+        "id":41,
+        "idProdcut":11,
+        "nama":"normal",
+        "price":5.00
+    },
+    {
+        "id":42,
+        "idProdcut":11,
+        "nama":"completa",
+        "price":6.00
+    }
+
+
+
+
+]
