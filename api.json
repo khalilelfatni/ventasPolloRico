@@ -2,57 +2,57 @@
     {
         "id":1,
         "name": "Kebab",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/kebab.jpg"
     },
     {
         "id" : 2,
         "name" : "Shawarma",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/shawarma.jpg"
     },
     {
         "id":3,
         "name": "Durum",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/durum.jpg"
     },
     {
         "id":4,
         "name": "Hamburgesa",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/hamburgesa.jpg"
     },
     {
         "id":5,
         "name": "Falafel",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/falafel.jpg"
     },
     {
         "id":6,
         "name": "Perrito",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/perrito.jpg"
     },
     {
         "id":7,
         "name": "Tarrina",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/tarrina.jpg"
     },
     {
         "id":8,
         "name": "Raciones",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/alitas.jpg"
     },
     {
         "id":9,
         "name": "Ensaladas ricas",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/ensalada.jpg"
     },
     {
         "id":10,
         "name": "Refrescos",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/refrescos.jpg"
     },
     {
         "id":10,
         "name": "Pizza turca",
-        "imgUrl" : "url"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/pizza-turca.jpg"
     }
 
 ]
