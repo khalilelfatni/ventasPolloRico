@@ -2,57 +2,57 @@
     {
         "id":1,
         "name": "Kebab",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/kebab.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/kebab.jpg?raw=true"
     },
     {
         "id" : 2,
         "name" : "Shawarma",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/shawarma.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/shawarma.jpg?raw=true"
     },
     {
         "id":3,
         "name": "Durum",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/durum.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/durum.jpg?raw=true"
     },
     {
         "id":4,
         "name": "Hamburgesa",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/hamburgesa.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/hamburgesa.jpg?raw=true"
     },
     {
         "id":5,
         "name": "Falafel",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/falafel.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/falafel.jpg?raw=true"
     },
     {
         "id":6,
         "name": "Perrito",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/perrito.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/perrito.jpg?raw=true"
     },
     {
         "id":7,
         "name": "Tarrina",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/tarrina.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/tarrina.jpg?raw=true"
     },
     {
         "id":8,
         "name": "Raciones",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/alitas.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/alitas.jpg?raw=true"
     },
     {
         "id":9,
         "name": "Ensaladas ricas",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/ensalada.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/ensalada.jpg?raw=true"
     },
     {
         "id":10,
         "name": "Refrescos",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/refrescos.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/refrescos.jpg?raw=true"
     },
     {
-        "id":10,
+        "id":11,
         "name": "Pizza turca",
-        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/pizza-turca.jpg"
+        "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/pizza-turca.jpg?raw=true"
     }
 
 ]
