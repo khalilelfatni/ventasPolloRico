@@ -1,0 +1,22 @@
+#quantity-product {
+    position: absolute;
+    top: 7%;
+    left: 44%;
+    color: black;
+    font-size: 26px;
+}
+#nav-bar{
+    position: absolute;
+    right: 1%;
+    top: 14%;
+    font-size: 40px;
+}
+
+#nav-bar > a{
+    text-decoration: none;
+    color:white
+}
+
+#container-product{
+    margin-top: 97px;
+}

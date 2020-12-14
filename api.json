@@ -36,17 +36,17 @@
     },
     {
         "id":8,
-        "name": "Raciones",
+        "name": "Racion",
         "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/alitas.jpg?raw=true"
     },
     {
         "id":9,
-        "name": "Ensaladas ricas",
+        "name": "Ensalada rica",
         "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/ensalada.jpg?raw=true"
     },
     {
         "id":10,
-        "name": "Refrescos",
+        "name": "Refresco",
         "imgUrl" : "https://github.com/khalilelfatni/appWEB/blob/master/refrescos.jpg?raw=true"
     },
     {
