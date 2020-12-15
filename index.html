@@ -28,7 +28,7 @@
 
   <div class="container" id="container-product">
     <div class="row" id="list-product">
-      
+
     </div>
     <h2 class="text-center mt-3">Carrito de compras</h2>
     <table id="table-product" class="table table-striped">
@@ -44,6 +44,11 @@
       <tbody id="list-table">
         
       </tbody>
+      <tfoot>
+        <tr id="footer">
+          <th colspan="5">Carrito Vacio - empieza a comprar </th>
+        </tr>
+      </tfoot>
     </table>
   
   </div>
@@ -71,11 +76,20 @@
       <td id="price">price</td>
       <td id="quantity">quantity</td>
       <td>
-        <button class="btn btn-danger btn-sm">-</button>
         <button class="btn btn-info btn-sm">+</button>
+        <button class="btn btn-danger btn-sm">-</button>
       </td>
       <td id="totalPrice"></td>
     </tr>
+  </template>
+
+  <template id="total-product">
+      <td colspan="2">Total Producto</td>
+      <td id="quantity-p">quantity</td>
+      <td>
+        <button class="btn btn-danger" onclick="emptyAll()">Vaciar Todo </button>
+      </td>
+      <td id="total-price">Total</td>
   </template>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

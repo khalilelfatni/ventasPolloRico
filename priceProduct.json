@@ -258,6 +258,12 @@
         "idProdcut":11,
         "name":"Completa",
         "price":6.00
+    },
+    {
+        "id":43,
+        "idProdcut":5,
+        "name":"Bolas Falafel",
+        "price":0.50
     }
 
 

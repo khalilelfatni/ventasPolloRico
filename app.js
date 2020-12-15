@@ -4,9 +4,12 @@ const listPrice = document.getElementById('list-price');
 const listTable = document.getElementById('list-table'); 
 const productCarrito = document.getElementById('product-carrito').content;
 const fragment  = document.createDocumentFragment();
+const totalTemplate = document.getElementById('total-product').content;
+const footer = document.getElementById('footer');
 let countProduct = 1;
 var arrayProduct = [];
 var quantityProduct = 1;
+
 
 
 
@@ -91,10 +94,11 @@ function addProduct(obj){
 
     
     paintTable();
+    //paintTableTotal();
 }
 
 function paintTable(){
-    listTable.innerText = "";
+    listTable.innerHTML = "";
 
     arrayProduct.forEach( item => { 
         productCarrito.querySelector('#name').textContent = item.name;
@@ -103,11 +107,39 @@ function paintTable(){
         productCarrito.querySelector('.btn-info').dataset.id = item.id;
         productCarrito.querySelector('.btn-danger').dataset.id = item.id;
         productCarrito.querySelector('#totalPrice').textContent = (item.quantityProduct * item.price) + '€';
+        
 
         const clone  = productCarrito.cloneNode(true);
         fragment.appendChild(clone);
 
     });
-
+    
+    
     listTable.appendChild(fragment);
+    
+
+    paintFooter();
+}
+
+function paintFooter(){
+    footer.innerHTML = "";
+    if(Object.keys(arrayProduct).length === 0){
+        footer.innerHTML = `<th colspan="2">Carrito Vacio - empieza a comprar </th>`;
+    }else{
+        const nQuantity = Object.values(arrayProduct).reduce((acc,{quantityProduct}) => acc + quantityProduct, 0);
+        const priceTotal = Object.values(arrayProduct).reduce((acc,{quantityProduct, price}) => acc + quantityProduct * price, 0);
+        totalTemplate.querySelector('#quantity-p').textContent = nQuantity;
+        totalTemplate.querySelector('#total-price').textContent = priceTotal + '€';
+        const clone = totalTemplate.cloneNode(true);
+        fragment.appendChild(clone);
+        footer.appendChild(fragment);
+    }
+
+}
+
+function emptyAll(){
+    arrayProduct = [];
+    paintTable();
+    $("#quantity-product").text('');
+
 }
