@@ -6,7 +6,8 @@ const productCarrito = document.getElementById('product-carrito').content;
 const fragment  = document.createDocumentFragment();
 const totalTemplate = document.getElementById('total-product').content;
 const footer = document.getElementById('footer');
-let countProduct = 1;
+
+let countProduct = 0;
 var arrayProduct = [];
 var quantityProduct = 1;
 
@@ -72,7 +73,8 @@ function pintarCrads(data,dataPrice){
 }
 
 function addProduct(obj){
-    $("#quantity-product").text(countProduct++);
+    countProduct = countProduct + 1;
+    $("#quantity-product").text(countProduct);
     var id = $(obj).data('id');
     var name = $(obj).data('name');
     var price = $(obj).data('price');
@@ -141,5 +143,47 @@ function emptyAll(){
     arrayProduct = [];
     paintTable();
     $("#quantity-product").text('');
+    countProduct = 0;
 
+}
+
+function sumProduct(obj){
+    id = $(obj).data('id');
+    countProduct++;
+    $("#quantity-product").text(countProduct);
+    arrayProduct[id].quantityProduct =  arrayProduct[id].quantityProduct + 1;
+    paintTable();
+
+}
+
+function subtractProduct(obj){
+    id = $(obj).data('id');
+    countProduct--;
+    if(arrayProduct[id].quantityProduct == 1){
+        delete arrayProduct[id];
+        paintTable();
+    }else{
+        arrayProduct[id].quantityProduct =  arrayProduct[id].quantityProduct - 1;
+        paintTable();
+    }
+    
+    if(countProduct == 0){
+        $("#quantity-product").text('');
+    }
+    else{
+        $("#quantity-product").text(countProduct);
+    }
+
+    
+    
+
+}
+
+function imprimir() {
+    
+    newWin= window.open("");
+    newWin.document.write(``);
+    newWin.print();
+    newWin.close();
+    
 }

@@ -53,8 +53,11 @@
   
   </div>
 
+
+  
+
   <template id="card-prodcut">
-    <div class="col-md-3 my-2 ">
+    <div class="col-md-3 my-2">
       <div class="card">
         <img class="card-img-top" height="150px" src="..." alt="Card image cap">
         <div class="card-body">
@@ -66,8 +69,9 @@
       </div>
     </div>
   </template>
-  <br><br>
+ 
   
+
 
 
   <template id="product-carrito">
@@ -76,21 +80,26 @@
       <td id="price">price</td>
       <td id="quantity">quantity</td>
       <td>
-        <button class="btn btn-info btn-sm">+</button>
-        <button class="btn btn-danger btn-sm">-</button>
+        <button class="btn btn-info btn-sm" onclick="sumProduct(this)">+</button>
+        <button class="btn btn-danger btn-sm" onclick="subtractProduct(this)">-</button>
       </td>
       <td id="totalPrice"></td>
     </tr>
   </template>
 
   <template id="total-product">
-      <td colspan="2">Total Producto</td>
-      <td id="quantity-p">quantity</td>
+      <td colspan="2" class="text-center font-weight-bold">Total Producto</td>
+      <td class="font-weight-bold" id="quantity-p">quantity</td>
       <td>
-        <button class="btn btn-danger" onclick="emptyAll()">Vaciar Todo </button>
+        <button class="btn btn-danger" onclick="emptyAll()">Vaciar</button>
+        <button class="btn btn-success" onclick="imprimir()"> ticket </button>
       </td>
-      <td id="total-price">Total</td>
+      <td class="font-weight-bold" id="total-price"> Total</td>
   </template>
+
+
+  
+  
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
