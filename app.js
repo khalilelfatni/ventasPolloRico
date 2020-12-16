@@ -182,7 +182,7 @@ function subtractProduct(obj){
 function imprimir() {
     
     newWin= window.open("");
-    newWin.document.write(``);
+    newWin.document.write(`en proceso`);
     newWin.print();
     newWin.close();
     
