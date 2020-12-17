@@ -196,10 +196,13 @@ function imprimir() {
     html = html + '<br>hora: ' + myDate.getHours() + ':' + myDate.getMinutes();
     html = html+ '<br>ticket nº:' + '1' + '<br><small>--------------------------</small>';
     html = html + '<br><small>--------------------------</small><br>';
-    html = html + '<b> shawrma  2  3€</b> <br>';
-    html = html + '<b> shawrma  2  3€</b> <br>';
+    html = html + 'shawrma &nbsp;&nbsp; 2 &nbsp;&nbsp; 3€ <br>';
+    html = html + 'shawrma &nbsp;&nbsp; 2 &nbsp;&nbsp; 3€ <br>';
     html = html + '<small>---------------------------</small><br>';
-    html = html + '<small> Total  2  5€</small> ';
+    html = html + '<small> Total &nbsp;&nbsp; 4 &nbsp;&nbsp; 6€</small> <br>';
+    html = html + '<small>---------------------------</small><br>';
+    html = html + '<b><small> Gracias </small><br> </b>';
+    html = html + '<b><small> Nos vemos pronto</small> <br></b> ';
     html = html + '</center>';
     html = html + '</body>';
     html = html + '</html>';
