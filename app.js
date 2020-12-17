@@ -12,9 +12,6 @@ var arrayProduct = [];
 var quantityProduct = 1;
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     fetchData();
@@ -35,7 +32,6 @@ const fetchData = async () => {
 
 
 }
-
 
 function pintarCrads(data,dataPrice){
     data.forEach(element => {
@@ -96,7 +92,6 @@ function addProduct(obj){
 
     
     paintTable();
-    //paintTableTotal();
 }
 
 function paintTable(){
@@ -174,9 +169,6 @@ function subtractProduct(obj){
         $("#quantity-product").text(countProduct);
     }
 
-    
-    
-
 }
 
 window.onscroll = function() {goUp()};
@@ -190,8 +182,31 @@ function goUp() {
 }
 
 function imprimir() {
-    newWin= window.open("");
-    newWin.document.write(`en proceso`);
+
+    myDate = new Date();
+    console.log(myDate);
+    var html = '<!DOCTYPE html> <html lang="es"><head> <meta charset="UTF-8"><meta name="viewport" ';
+    
+    html = html + 'content="width=device-width, initial-scale=1.0">';
+    
+    html = html + '<title>ticket</title></head>';
+    html = html + '<body style="margin-left: 35%; margin-right: 30%; margin-top: 40%; ">'
+    html = html + '<center><h1>POLLO RICO</h1>';
+    html = html + 'fecha:' + ' ' + myDate.getUTCDate()+ '/' +myDate.getUTCMonth() + '/' + myDate.getUTCFullYear();
+    html = html + '<br>hora: ' + myDate.getHours() + ':' + myDate.getMinutes();
+    html = html+ '<br>ticket nº:' + '1' + '<br><small>--------------------------</small>';
+    html = html + '<br><small>--------------------------</small><br>';
+    html = html + '<b> shawrma  2  3€</b> <br>';
+    html = html + '<b> shawrma  2  3€</b> <br>';
+    html = html + '<small>---------------------------</small><br>';
+    html = html + '<small> Total  2  5€</small> ';
+    html = html + '</center>';
+    html = html + '</body>';
+    html = html + '</html>';
+    
+    
+    newWin= window.open();
+    newWin.document.write(html);
     newWin.print();
     newWin.close();
     
