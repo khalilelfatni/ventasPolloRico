@@ -179,8 +179,17 @@ function subtractProduct(obj){
 
 }
 
+window.onscroll = function() {goUp()};
+
+function goUp() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    $("#go-up").show();
+  } else {
+    $("#go-up").hide();
+  }
+}
+
 function imprimir() {
-    
     newWin= window.open("");
     newWin.document.write(`en proceso`);
     newWin.print();

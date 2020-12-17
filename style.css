@@ -1,3 +1,7 @@
+
+body{
+    overflow-x: hidden;
+}
 #quantity-product {
     position: absolute;
     top: 7%;
@@ -19,5 +23,18 @@
 
 #container-product{
     margin-top: 97px;
+}
+
+#go-up{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    z-index: 99999;
+    display: none;
+
+}
+
+#color-red{
+    color: #dc3545!important;;
 }
 
