@@ -6,6 +6,8 @@ const productCarrito = document.getElementById('product-carrito').content;
 const fragment  = document.createDocumentFragment();
 const totalTemplate = document.getElementById('total-product').content;
 const footer = document.getElementById('footer');
+var nQuantityprint = 0;
+var nTotalPriceprint = 0;
 
 let countProduct = 0;
 var arrayProduct = [];
@@ -184,22 +186,29 @@ function goUp() {
 function imprimir() {
 
     myDate = new Date();
-    console.log(myDate);
+    
     var html = '<!DOCTYPE html> <html lang="es"><head> <meta charset="UTF-8"><meta name="viewport" ';
     
     html = html + 'content="width=device-width, initial-scale=1.0">';
     
     html = html + '<title>ticket</title></head>';
-    html = html + '<body style="margin-left: 35%; margin-right: 30%; margin-top: 40%; ">'
+    html = html + '<body style="margin-left: 20%; margin-right: 20%; margin-top: 40%; ">'
     html = html + '<center><h1>POLLO RICO</h1>';
-    html = html + 'fecha:' + ' ' + myDate.getUTCDate()+ '/' +myDate.getUTCMonth() + '/' + myDate.getUTCFullYear();
+    html = html + 'fecha:' + ' ' + myDate.getUTCDate()+ '/' + myDate.getUTCMonth() + '/' + myDate.getUTCFullYear();
     html = html + '<br>hora: ' + myDate.getHours() + ':' + myDate.getMinutes();
     html = html+ '<br>ticket nº:' + '1' + '<br><small>--------------------------</small>';
     html = html + '<br><small>--------------------------</small><br>';
-    html = html + 'shawrma &nbsp;&nbsp; 2 &nbsp;&nbsp; 3€ <br>';
-    html = html + 'shawrma &nbsp;&nbsp; 2 &nbsp;&nbsp; 3€ <br>';
+
+
+    arrayProduct.forEach(item => {
+        html = html + item.quantityProduct + '&nbsp;&nbsp;' + item.name + '&nbsp;&nbsp;&nbsp;&nbsp;' + item.price*item.quantityProduct + '€<br>';
+        nQuantityprint = nQuantityprint +  item.quantityProduct;
+        nTotalPriceprint = nTotalPriceprint + (item.quantityProduct * item.price);
+
+    });
+    
     html = html + '<small>---------------------------</small><br>';
-    html = html + '<small> Total &nbsp;&nbsp; 4 &nbsp;&nbsp; 6€</small> <br>';
+    html = html + '<small> ' + 'Total &nbsp;&nbsp;&nbsp;' +  nQuantityprint +  '&nbsp;&nbsp;&nbsp;'  +  nTotalPriceprint + '€' + '</small> <br>';
     html = html + '<small>---------------------------</small><br>';
     html = html + '<b><small> Gracias </small><br> </b>';
     html = html + '<b><small> Nos vemos pronto</small> <br></b> ';
