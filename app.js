@@ -193,9 +193,9 @@ function imprimir() {
     html = html + '<title>ticket</title></head>';
     html = html + '<body style="margin-left: 20%; margin-right: 20%; margin-top: 40%; ">'
     html = html + '<center><h1>POLLO RICO</h1>';
-    html = html + 'fecha:' + ' ' + myDate.getUTCDate()+ '/' + myDate.getUTCMonth() + '/' + myDate.getUTCFullYear();
-    html = html + '<br>hora: ' + myDate.getHours() + ':' + myDate.getMinutes();
-    html = html+ '<br>ticket nº:' + '1' + '<br><small>--------------------------</small>';
+    html = html + '<b>Fecha:' + ' ' + myDate.getUTCDate()+ '/' + (myDate.getUTCMonth()+1) + '/' + myDate.getUTCFullYear();
+    html = html + '<br>Hora: ' + myDate.getHours() + ':' + myDate.getMinutes(); 
+    html = html+ '<br>Ticket nº:' + '1' + '</b><br><small>--------------------------</small>';
     html = html + '<br><small>--------------------------</small><br></center>';
     arrayProduct.forEach(item => {
         html = html + '<center><small>' +item.quantityProduct + '&nbsp;&nbsp;' + item.name + '&nbsp;&nbsp;&nbsp;&nbsp;' + item.price*item.quantityProduct + '€</small></center>';
@@ -206,7 +206,7 @@ function imprimir() {
     html = html + '<b><small> ' + 'Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  +  nTotalPriceprint + '€' + '</small></b> <br>';
     html = html + '<small>---------------------------</small><br>';
     html = html + '<b><small> Gracias </small><br> </b>';
-    html = html + '<b><small> Nos vemos pronto</small> <br></b> <center>';
+    html = html + '<b><small> Nos vemos pronto</small> <br></b> </center>';
     html = html + '</body>';
     html = html + '</html>';
     
