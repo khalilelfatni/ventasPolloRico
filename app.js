@@ -6,8 +6,6 @@ const productCarrito = document.getElementById('product-carrito').content;
 const fragment  = document.createDocumentFragment();
 const totalTemplate = document.getElementById('total-product').content;
 const footer = document.getElementById('footer');
-var nQuantityprint = 0;
-var nTotalPriceprint = 0;
 
 let countProduct = 0;
 var arrayProduct = [];
@@ -186,7 +184,8 @@ function goUp() {
 function imprimir() {
 
     myDate = new Date();
-    
+    let nTotalPriceprint = 0;
+
     var html = '<!DOCTYPE html> <html lang="es"><head> <meta charset="UTF-8"><meta name="viewport" ';
     
     html = html + 'content="width=device-width, initial-scale=1.0">';
@@ -197,25 +196,19 @@ function imprimir() {
     html = html + 'fecha:' + ' ' + myDate.getUTCDate()+ '/' + myDate.getUTCMonth() + '/' + myDate.getUTCFullYear();
     html = html + '<br>hora: ' + myDate.getHours() + ':' + myDate.getMinutes();
     html = html+ '<br>ticket nº:' + '1' + '<br><small>--------------------------</small>';
-    html = html + '<br><small>--------------------------</small><br>';
-
-
+    html = html + '<br><small>--------------------------</small><br></center>';
     arrayProduct.forEach(item => {
-        html = html + item.quantityProduct + '&nbsp;&nbsp;' + item.name + '&nbsp;&nbsp;&nbsp;&nbsp;' + item.price*item.quantityProduct + '€<br>';
-        nQuantityprint = nQuantityprint +  item.quantityProduct;
+        html = html + '<center><small>' +item.quantityProduct + '&nbsp;&nbsp;' + item.name + '&nbsp;&nbsp;&nbsp;&nbsp;' + item.price*item.quantityProduct + '€</small></center>';
         nTotalPriceprint = nTotalPriceprint + (item.quantityProduct * item.price);
 
     });
-    
-    html = html + '<small>---------------------------</small><br>';
-    html = html + '<small> ' + 'Total &nbsp;&nbsp;&nbsp;' +  nQuantityprint +  '&nbsp;&nbsp;&nbsp;'  +  nTotalPriceprint + '€' + '</small> <br>';
+    html = html + '<center><small>---------------------------</small><br>';
+    html = html + '<b><small> ' + 'Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'  +  nTotalPriceprint + '€' + '</small></b> <br>';
     html = html + '<small>---------------------------</small><br>';
     html = html + '<b><small> Gracias </small><br> </b>';
-    html = html + '<b><small> Nos vemos pronto</small> <br></b> ';
-    html = html + '</center>';
+    html = html + '<b><small> Nos vemos pronto</small> <br></b> <center>';
     html = html + '</body>';
     html = html + '</html>';
-    
     
     newWin= window.open();
     newWin.document.write(html);
